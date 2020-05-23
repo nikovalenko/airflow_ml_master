@@ -1,0 +1,4 @@
+name,object_detection,scene_detection,activity_detection,facial_recognition,facial_and_sentiment_analysis,inappropriate_content_detection,celebrity_recognition,text_recognition,person_tracking_on_videos,audio_transcription,speaker_indexing,keyframe_extraction,brand_recognition,annotation,dominant_colors_detection,realtime_analysis,video_translation,keywords_extraction
+amazon,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,0,0
+microsoft,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1
+google,1,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0

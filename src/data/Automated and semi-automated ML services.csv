@@ -1,0 +1,5 @@
+name,classification,regression,clustering,anomaly_detection,recommendation,ranking
+amazon_ml,1,1,1,0,0,0
+mictosoft_azure_ml_studio,1,1,1,1,1,1
+google_cloud_auto_ml,1,1,0,0,1,0
+ibm_warson_ml_model_builder,1,1,0,0,0,0

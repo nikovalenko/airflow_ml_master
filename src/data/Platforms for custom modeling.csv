@@ -1,0 +1,5 @@
+name,built_in_algs,sup_frameworks
+aws_sagemaker,1,"tensorflow,mxnet,keras,gluon,pytorch,caffe2,chainer,torch,seaborn,scipy,pandas"
+azure_ml_services,0,"tensorflow,scikit-learn,microsoft_cognitive_toolkit,sparl_ml"
+google_ml_engine,1,"tensorflow,scikit-learn,keras,xgboost"
+ibm_watson_ml_studio,1,"tensorflow,scikit-learn,pytorch,xgboost,spark_mlib,ibm_spss,pmml"

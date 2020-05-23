@@ -1,0 +1,5 @@
+name,speech_recognition,text_into_speech,entities_extraction ,key_phrase_extraction ,language_recognition,topics_extraction,spell_check,autocompletion,voice_verification ,intention_analysis,metadata_extraction,relations_analysis ,sentiment_analysis,personality_analysis,syntax_analysis,tagging_parts_of_speech,filtering_inappropriate_content,low_qualty_audio_handling,translation,chatbot_toolset
+amazon,1,1,1,1,100,1,0,0,1,1,0,0,1,0,0,0,0,1,6,1
+microsoft,1,1,1,1,120,1,1,1,1,1,0,1,1,0,1,1,1,1,60,1
+google,1,1,1,1,120,1,0,0,0,1,0,0,1,0,1,1,1,1,100,1
+ibm,1,1,1,1,60,1,0,0,0,1,1,1,1,1,1,0,0,1,21,1

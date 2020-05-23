@@ -1,0 +1,5 @@
+terraform.*
+.terraform
+*.info
+__pycache__
+creds.tf

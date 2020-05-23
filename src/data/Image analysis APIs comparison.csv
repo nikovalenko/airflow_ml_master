@@ -1,0 +1,5 @@
+name,object_detection,scene_detection,face_detection,face_recognition,facial_analysis,inappropriate_content_detection,celebrity_recognition ,text_recognition,written_text_recognition,search_for_similar_images,logo_detection,landmark_detection ,food_recognition,dominant_colors_detection
+amazon,1,1,1,1,1,1,1,1,0,0,0,0,0,0
+microsoft,1,1,1,1,1,1,1,1,1,0,0,1,0,1
+google,1,1,1,0,1,1,1,1,1,1,1,1,0,1
+ibm,1,0,1,0,1,1,0,1,0,0,0,0,1,0
