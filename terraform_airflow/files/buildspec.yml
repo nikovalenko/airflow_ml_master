@@ -5,6 +5,8 @@ phases:
     runtime-versions:
         python: 3.7
     commands:
+      - git config --global credential.helper '!aws codecommit credential-helper $@'
+      - git config --global credential.UseHttpPath true
       - pip install -r ./terraform_airflow/files/requirements.txt
   build:
     commands:
