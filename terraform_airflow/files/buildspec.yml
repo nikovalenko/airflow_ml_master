@@ -5,13 +5,12 @@ phases:
     runtime-versions:
         python: 3.7
     commands:
-      - git config --global credential.helper '!aws codecommit credential-helper $@'
-      - git config --global credential.UseHttpPath true
+      - aws cp s3://ml-ops-bucket.s3.amazonaws.com/ml-ops-us-east-1.pem ml-ops-us-east-1.pem
       - pip install -r ./terraform_airflow/files/requirements.txt
   build:
     commands:
       - ssh-keyscan -t rsa $AIRFLOW_INSTANCE_PUBLIC_DNS >> ~/.ssh/known_hosts
-      - chmod 600 ./terraform_airflow/files/ssh/ml-ops-us-east-1.pem
+      - chmod 600 ml-ops-us-east-1.pem
       - chmod 755 ~/.ssh
-      - scp -i "./terraform_airflow/files/ssh/ml-ops-us-east-1.pem" -r ./terraform_airflow/files/dags/* centos@$AIRFLOW_INSTANCE_PUBLIC_DNS:/home/centos/airflow/dags
-      - ssh -i "./terraform_airflow/files/ssh/ml-ops-us-east-1.pem" centos@$AIRFLOW_INSTANCE_PUBLIC_DNS 'bash -s' < ./terraform_airflow/files/init_airflowdb.sh
+      - scp -i "ml-ops-us-east-1.pem" -r ./terraform_airflow/files/dags/* centos@$AIRFLOW_INSTANCE_PUBLIC_DNS:/home/centos/airflow/dags
+      - ssh -i "ml-ops-us-east-1.pem" centos@$AIRFLOW_INSTANCE_PUBLIC_DNS 'bash -s' < ./terraform_airflow/files/init_airflowdb.sh
