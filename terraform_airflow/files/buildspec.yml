@@ -6,7 +6,6 @@ phases:
         python: 3.7
     commands:
       - aws cp s3://ml-ops-bucket.s3.amazonaws.com/ml-ops-us-east-1.pem ml-ops-us-east-1.pem
-      - pip install -r ./terraform_airflow/files/requirements.txt
   build:
     commands:
       - ssh-keyscan -t rsa $AIRFLOW_INSTANCE_PUBLIC_DNS >> ~/.ssh/known_hosts
